@@ -35,4 +35,6 @@
     border-radius: 10px;
     padding: 8px;
 }
-
+.bt{
+    display: flex;
+}

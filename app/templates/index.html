@@ -30,8 +30,10 @@
             <img src="{{ i.menu_image.url }}" alt="">
             <h3>{{ i.menu_name }}</h3>
             <p>{{ i.menu_price }}</p>
+            <div class="bt1">
             <a href="{% url 'order' %}?drink={{ i.menu_name }}"><button>Order Now</button></a>
             <a href="{% url 'addcart' i.id %}"><button>Add to cart</button></a>
+            </div>
           </div>
        {% endfor %}
     </div>

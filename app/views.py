@@ -5,6 +5,7 @@ from django.contrib.auth import login,authenticate,logout
 from django.core.mail import send_mail
 from django.conf import settings
 import random,time,string
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
@@ -12,16 +13,17 @@ def index_page(request):
     n=menu.objects.all()
     return render(request,'index.html',{'n':n})
 
-
+@login_required
 def menu_page(request):
     a=menu.objects.all()
     return render(request,'menu.html',{'a':a})
 
-
+@login_required
 def order(request):
     drink_name=request.GET.get('drink')
     selected_drink=menu.objects.get(menu_name=drink_name)
     return render(request,'order.html',{'drink':selected_drink})
+
 
 def login_page(request):
     if request.method == 'POST':
@@ -59,11 +61,13 @@ def signup_page(request):
             return redirect('login')
     return render(request,'signup.html')
 
+
+@login_required
 def logout_page(request):
     logout(request)
     return redirect('login')
     
-
+@login_required
 def contact_page(request):
     if request.method=='POST':
         name=request.POST.get('Name')
@@ -106,7 +110,7 @@ def otp_page(request):
 
 
 
-
+@login_required
 def add_cart(request,id):
     b=menu.objects.get(id=id)
     cart=request.session.get('cart',[])
@@ -118,8 +122,14 @@ def add_cart(request,id):
         'description':b.menu_description,
     })
     request.session['cart']=cart
-    return redirect('cart')
+    return redirect('menu')
 
+
+@login_required
 def cart_page(request):
     cart=request.session.get('cart',[])
     return render(request,'cart.html',{'cart':cart})
+
+
+def buy_page(request):
+    return render(request,'buy.html')

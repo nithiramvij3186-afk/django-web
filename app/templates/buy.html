@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+    <link rel="stylesheet" href="{% static 'css/buy.css' %}">
+    <div class="conta">
+    <div class="buyed">
+        <p>order placed successfully</p>
+        <a href="{% url 'menu' %}"><button>back to menu</button></a>
+    </div>
+    </div>
+{% endblock %}

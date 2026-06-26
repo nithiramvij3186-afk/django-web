@@ -17,7 +17,7 @@
     <td>{{ i.name }}</td> 
     <td>{{ i.price }}</td> 
     <td><img src="{{ i.image }}" alt="" width="80px" height="30px"></td> 
-    <td><button>Buy Now</button></td>
+    <td><a href="{% url 'buyed' %}"><button>Buy Now</button></a></td>
      </tr>
     {% endfor %}
 

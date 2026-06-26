@@ -8,7 +8,7 @@
         <h2 id="tu">{{ drink.menu_name }}</h2>
 
             <p>{{ drink.menu_description }}</p>
-            <button>Delivery</button>
+            <a href="{% url 'buyed' %}"><button>Delivery</button></a>
         </section>
         <section class="ca">
             <img src="{{ drink.menu_image.url }}" alt="">

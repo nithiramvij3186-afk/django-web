@@ -1,0 +1,35 @@
+.buyed{
+    background-color: rgb(8, 8, 8);
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: move 1s ease-in 1;
+}
+
+@keyframes move{
+    from{
+        transform: scale(0.6);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+button{
+    border-radius: 30px;
+    height: 30px;
+    background-color: bisque;
+    padding: 8px;
+}
