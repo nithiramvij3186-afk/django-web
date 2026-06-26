@@ -29,6 +29,7 @@ header{
     align-items: center;
     padding: 20px;
     background-color: rgb(20, 20, 20);
+    font-variant: small-caps;
 }
 footer{
     display: flex;
