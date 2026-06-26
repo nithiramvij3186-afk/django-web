@@ -1,0 +1,53 @@
+body{
+     background-color: rgb(145, 85, 47);
+     margin: 0px;
+}
+.br h1{
+    display: inline;
+    margin-inline-start: 20px;
+    color: azure;
+}
+h2{
+    margin-left: auto;
+}
+nav{
+    display: flex;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav li{
+    list-style: none;
+    margin-right: 20px;
+  }
+nav a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+}
+footer{
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    color: azure;
+
+}
+.End{
+    display:flex;
+    color: azure;
+    gap: 10px;
+}
+svg{
+    justify-content: space-between;
+    width: 40px ;
+    color: azure;
+    background-color: azure;
+    border-radius: 8px;
+    margin: 10px;
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+
+    <section id="foods">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_ykj20FJlS1JohkD8E6yA2PHY9p4smZX_SIzHpjpIw&s=10" alt="">
+        <a href="{% url 'menu' %}">
+          <button>Shop Now</button>
+        </a>
+        <p class="text">Freshly Roasted</p>
+        <p class="below">COFFEE</p>
+    </section>
+    <section id="desc">
+        <div class="intro">
+            <h1>Crafted with Passion,Served with Love</h1>
+            <p>We source our beans from sustainable farms around the world, roasting them in-house to bring out their unique flavours.Every cup we serve is a testament to our commitment to excellence. Our skilled baristas transform premium beans into artful beverages that awaken the senses and warm the soul.</p>
+            <p>Each sip offers a unique and unforgettable experience, carefully crafted to brighten your day In our cozy and welcoming space.With a wide variety of flavors and options, we cater to every coffee lover's preference. Your satisfaction is our priority. and we strive to deliver excellence with every visit.</p>
+        </div>
+        <img src="https://i.pinimg.com/736x/93/3e/a4/933ea424c67ed66e512fcde0645faec5.jpg" alt="">
+    </section>
+    <section id="types">
+        <h1>Discover</h1>
+        <h2>From classic espresso to innovative special drinks</h2>
+     </section>
+    <div class="brews">
+        {% for i in n %}
+        <div class="car">
+            <img src="{{ i.menu_image.url }}" alt="">
+            <h3>{{ i.menu_name }}</h3>
+            <p>{{ i.menu_price }}</p>
+            <a href="{% url 'order' %}?drink={{ i.menu_name }}"><button>Order Now</button></a>
+            <a href="{% url 'addcart' i.id %}"><button>Add to cart</button></a>
+          </div>
+       {% endfor %}
+    </div>
+{% endblock %}

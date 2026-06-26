@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+
+    <div class="contain">
+        {% for i in a %}
+        <div class="card">
+             <img src="{{ i.menu_image.url }}" alt="">
+            <h3>{{ i.menu_name }}</h3>
+            <p>{{ i.menu_price }}</p>
+            <a href="{% url 'order' %}?drink={{ i.menu_name }}"><button>Order Now</button></a>
+            <a href="{% url 'addcart' i.id %}"><button>Add to cart</button></a>
+          </div>
+    {% endfor %}
+        </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+ <link rel="stylesheet" href="{% static 'css/otp.css' %}">
+   <div class="otpp">
+        <form action="{% url 'otp' %}" method="post" class="otp">
+                {% csrf_token %}
+                <h1>Enter otp</h1>
+                <input type="text" name="otp" required><br><br>
+                <button type="submit">Submit</button>
+                <p>{{ error }}</p>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/cart.css' %}">
+<div class="containe"></div>
+<table border="5px" >
+    <tr>
+        <th>product id</th>
+        <th>product name</th>
+        <th>product price</th>
+        <th>product image</th>
+        <th>action</th>
+    </tr>
+    {% for i in cart %}
+    <tr>
+    <td>{{ i.id }}</td>
+    <td>{{ i.name }}</td> 
+    <td>{{ i.price }}</td> 
+    <td><img src="{{ i.image }}" alt="" width="80px" height="30px"></td> 
+    <td><button>Buy Now</button></td>
+     </tr>
+    {% endfor %}
+
+</table>
+</div>
+{% endblock %}
