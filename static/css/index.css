@@ -5,6 +5,7 @@ body{
 #foods{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 40px;
@@ -52,6 +53,7 @@ body{
 }
 #desc{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
@@ -60,6 +62,7 @@ body{
  }
 .intro{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     line-height: 40px;
 }
@@ -92,6 +95,7 @@ body{
     padding: 30px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 40px black ;
@@ -112,4 +116,5 @@ body{
 }
 .bt1{
     display: flex;
+    flex-wrap: wrap;
 }
