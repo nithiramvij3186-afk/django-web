@@ -38,3 +38,13 @@
 .bt{
     display: flex;
 }
+
+@media(max-width:768px){
+    .contain{
+    display: grid;
+    grid-template-columns: repeat(1,100px);
+    gap: 30px;
+    justify-content: space-around;
+    margin: 40px;
+    }
+}

@@ -35,3 +35,17 @@ table img{
     height: 80px;
     object-fit: cover;
 }
+@media(max-width:768px){
+    table{
+        margin: 0px 25px 530px 25px;
+        padding: 50px;
+        width: 600px;
+    }
+    .containe{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 40px;
+}
+
+}

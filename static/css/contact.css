@@ -58,3 +58,35 @@ body{
     margin: 10px;
 
 }
+@media(max-width:768px){
+    .contact{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px 230px ;
+    margin: 50px;
+    margin-left:50px ;
+    border-radius: 40px;
+    width: 70%;
+    gap: 10%;
+
+ }
+    .cont{
+    background-color: rgba(145, 174, 177, 0.863);
+    padding: 20px;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-variant: small-caps;
+}
+.contact img{
+    width: 400px;
+    height: 480px;
+    border-radius:20px ;
+ }
+}

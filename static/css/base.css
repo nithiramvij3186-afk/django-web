@@ -4,7 +4,7 @@ body{
 }
 .br h1{
     display: inline;
-    margin-inline-start: 20px;
+    margin-inline-start: 40px;
     color: azure;
 }
 h2{
@@ -25,10 +25,11 @@ nav a{
 }
 header{
     display:flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgb(20, 20, 20);
+    background-color: #141414;
     font-variant: small-caps;
 }
 footer{
@@ -51,4 +52,23 @@ svg{
     background-color: azure;
     border-radius: 8px;
     margin: 10px;
+}
+@media(max-width:768px){
+ header{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #141414;
+    font-variant: small-caps;
+    width: 610px;
+}
+
+    footer{
+        width: 610px;
+    }
+    nav{
+    display: flex;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
 }
