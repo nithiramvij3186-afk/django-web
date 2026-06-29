@@ -34,5 +34,35 @@ button{
     padding: 8px;
 }
 @media(max-width:768px){
-    
+    .buyed{
+    background-color: rgb(8, 8, 8);
+    width: 300px;
+    height: 300px;
+    padding:70px;
+    margin: 30px 0;
+    margin-left: 250px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: move 1s ease-in 1;
+}
+.conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 128vh;
+}
+.buyed p{
+    font-size: 50px;
+}
+button{
+    border-radius: 30px;
+    height: 50px;
+    background-color: bisque;
+    padding: 5px;
+    font-size: 30px;
+}
 }

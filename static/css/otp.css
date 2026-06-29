@@ -24,7 +24,8 @@ body{
 }
 .otp button{
     margin: 15px auto;
-    background-color: rgba(255, 255, 255, 0.886);
+    color: beige;
+    background-color: rgba(30, 30, 30, 0.886);
     border-radius: 5px;
     font-weight: bolder;
     padding: 8px;
@@ -41,4 +42,29 @@ body{
     width: 200px;
     margin: 10px ;
     padding: 7px;
+}
+@media(max-width:768px){
+    .otpp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 66px 0;
+    margin:300px 300px ;
+    margin-left: 150px;
+    border-radius: 40px;
+    width: 90%;
+ }
+ .otp button{
+    margin: 15px auto;
+    color: beige;
+    background-color: rgba(28, 28, 28, 0.886);
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 8px;
+    width: 200px;
+}
+.otp h1{
+    font-size: 40px;
+}
 }
