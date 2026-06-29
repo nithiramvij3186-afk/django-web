@@ -1,5 +1,4 @@
 table{
-    margin: 0 auto 300px auto;
     color: rgb(0, 0, 0);
     border-color: black;
     background-image: url(../../media/9adc122640e8c7bacd1f7945316b3f14.jpg);
@@ -26,7 +25,6 @@ table button{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 30px;
 }
 .table-containe{
@@ -39,9 +37,8 @@ table img{
 }
 @media(max-width:768px){
     table{
-        margin: 0px 25px;
-        margin-bottom: 500px;
-        margin-left: 280px;
+        margin-bottom: 130px;
+        margin-left: 310px;
         padding: 50px;
         width: 600px;
         font-size: 25px;
@@ -51,7 +48,6 @@ table img{
     justify-content: center;
     align-items:center;
     padding: 120px;
-    height: 100vh;
     }
 
 }
