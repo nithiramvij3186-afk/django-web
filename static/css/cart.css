@@ -17,7 +17,8 @@ td,th{
     border: 1.5px black solid;
 }
 table button{
-    background-color: rgb(179, 110, 25);
+    background-color: rgb(52, 24, 24);
+    color: beige;
     border-radius: 20px;
     border-color: 10px black solid;
 }
@@ -43,6 +44,7 @@ table img{
         margin-left: 280px;
         padding: 50px;
         width: 600px;
+        font-size: 25px;
     }
     .containe{
     display: flex;
@@ -50,6 +52,6 @@ table img{
     align-items:center;
     padding: 120px;
     height: 100vh;
-}
+    }
 
 }

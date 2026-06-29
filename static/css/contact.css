@@ -72,10 +72,10 @@ body{
 
  }
     .cont{
-    background-color: rgba(145, 174, 177, 0.863);
+    background-color: rgba(149, 177, 145, 0.863);
     padding: 20px;
-    width: 350px;
-    height: 450px;
+    width: 370px;
+    height: 660px;
     border-radius: 10px;
     display: grid;
     flex-wrap: wrap;
@@ -85,8 +85,6 @@ body{
     font-variant: small-caps;
 }
 .contact img{
-    width: 400px;
-    height: 480px;
-    border-radius:20px ;
+    display: none;
  }
 }

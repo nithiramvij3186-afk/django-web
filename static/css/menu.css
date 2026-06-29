@@ -47,4 +47,10 @@
     justify-content: space-around;
     margin: 40px;
     }
+    .card{
+        font-size: 30px;
+    }
+    .card button{
+        font-size: 25px;
+    }
 }
